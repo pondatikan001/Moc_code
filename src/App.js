@@ -1,21 +1,27 @@
 import React from 'react';
-
 import Navbar from './features/Navbar';
 import Container from './features/Container';
 import Home from './features/Home';
-//import Productdetail from './features/Productdetail';
+import Detail from './features/Detail/index';
+
+import {  Switch, Route } from 'react-router-dom';
+
+
 
 
 function App() {
   return (
-    <>
+    <div>
       <Navbar />
       <Container>
-        <Home />
-        
-        
+        <Switch>
+          <Route path ="/" exact>
+            <Home /> 
+          </Route>
+            
+        </Switch>
       </Container>
-    </>
+    </div>
   );
 }
 

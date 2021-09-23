@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Product({ item}) {
+
+function Product({item}) {
   const productImage = require(`../../image/${item.imageURL}`);
-  return (
+    return (
     <li className="Products">
-      <a href={`../Productdetail${item.id}`}>
-        <img className="Products__image" src={productImage} alt={item.name} />
+      <a href={`/Detail${item.id}`}>
+       <img className="Products__image" src={productImage} alt={item.name}/>
         <div className="Products__name">{item.name}</div>
         <small className="Products__type">{item.type}</small>
       </a>
