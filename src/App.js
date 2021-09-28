@@ -18,6 +18,9 @@ function App() {
           <Route path ="/" exact>
             <Home /> 
           </Route>
+          <Route path="/detail/:id" exact>
+            <Detail />
+					</Route>
             
         </Switch>
       </Container>
